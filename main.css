@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:url(peg.png);
+    background-image: cover;
+    background-position: center;
+    background-size: cover;
+}  
+
+.banner{
+    background-color: rgba(0, 0, 0, 0.384);
+    height: 60px;
+}  
+.nabar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.nabar ul li{
+     list-style: none;
+     display: inline-block;
+     margin: 0 25px; 
+     position: relative;
+}
+.nabar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nabar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0ddd1e;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.nabar ul li:hover::after{
+    width: 100%;
+    transition: .5s;
+}
+.body{
+  width: 60%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  color: white;
+  transform: translateY(-50%);
+  align-content: center;
+  margin-left: 20%;
+  /* background-color: aqua; */
+
+}
+.body h1{
+    color: red;
+    text-transform: uppercase;
+    margin: 20px;
+}
+.body p{
+    margin: 10px;
+}
+
+ .btn{
+    margin: 50px;
+ }
+ .btn button{
+    color: rgb(255, 255, 255);
+    height: 40px;
+    width: 120px;
+    border-radius: 2000px;
+    border: 1px solid rgb(255, 255, 255);
+    margin:15px 30px;
+    background-color: transparent;
+     position: relative;  
+     overflow: hidden;
+ }
+span{
+    background-color: #2f9600;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1; 
+    transition: 0.5s ease-in-out;
+ }
+button:hover span{
+    width: 100%;
+}
+.btn:hover{
+     border: none;
+}
+
+
+
+
+/* styles for login page */
+
+

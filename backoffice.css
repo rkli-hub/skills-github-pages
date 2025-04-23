@@ -1,0 +1,132 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    }
+    
+    /* Body styling */
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    }
+    
+    /* Vertical menu styling */
+    .menu {
+    width: 20%;
+    background-color: #ffffff;
+    color: #fff;
+    /* padding: 20px; */
+    }
+    
+    .menu ul {
+    list-style: none;
+    }
+
+    .menu ul li {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    }
+    
+    .menu ul li .active {
+    border: 1px solid blue;
+    }
+    
+    /* Content area styling */
+    .content {
+    width: 80%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    transition: opacity 0.5s ease-in-out;
+    }
+    
+    .content h1 {
+    margin-bottom: 20px;
+    }
+    
+    .content p {
+    line-height: 1.6;
+    }
+    
+    .fronttill{
+        color: #000000;
+        background-color: #ffffff;
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+        border: none;
+        width: 100%;
+        padding-left: 0px;
+        text-decoration: none;
+    }
+
+    .fronttill a{
+        text-decoration: none;
+    }
+    .menu-box {
+        border: 2px solid #333;
+        border-radius: 8px;
+        padding: 10px;
+        width: 200px;
+        font-family: Arial, sans-serif;
+        background: #fff;
+      }
+      
+      /* Main menu list */
+      .main-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      /* Menu items */
+      .main-menu li {
+        position: relative;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .main-menu li:hover {
+        background-color: #f5f5f5;
+      }
+      
+      /* Submenu styling */
+      .submenu {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+        background-color: #fff;
+        border-top: 1px solid #eee;
+      }
+      
+      /* Show submenu on hover */
+      .main-menu li:hover .submenu {
+        display: block;
+      }
+      
+      .submenu li {
+        padding: 8px 15px;
+        font-size: 0.9em;
+        color: #666;
+      }
+      .submenu li:hover {
+        background-color: #f8f8f8;
+      }
+      
+      /* Arrow indicator replacement */
+      .has-submenu::after {
+        content: "›";
+        float: right;
+        transform: rotate(90deg);
+        margin-left: 10px;
+        color: #999;
+      }
